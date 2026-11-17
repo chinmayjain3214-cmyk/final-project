@@ -1,0 +1,30 @@
+{
+  "orderNo": "PO-143",
+  "orderDate": "2026-11-17",
+  "supplier": {
+    "name": "SecureTech Supplies",
+    "id": "VEN-116"
+  },
+  "requestingDepartment": "Examinations",
+  "currencyCode": "INR",
+  "lines": [
+    {
+      "item": "Tamper-evident Envelope",
+      "qty": 500,
+      "uom": "piece",
+      "rate": 12.5,
+      "gstPercent": 18
+    },
+    {
+      "item": "Document Safe",
+      "qty": 2,
+      "uom": "piece",
+      "rate": 18500,
+      "gstPercent": 18
+    }
+  ],
+  "netAmount": 43250.0,
+  "gstAmount": 7785.0,
+  "grossAmount": 51035.0,
+  "remark": "Fictional purchase order for testing the invoice agent."
+}

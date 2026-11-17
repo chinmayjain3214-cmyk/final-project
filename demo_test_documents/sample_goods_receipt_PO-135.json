@@ -1,0 +1,17 @@
+{
+  "receiptNo": "GRN-7783",
+  "againstPO": "PO-135",
+  "supplierName": "Nova Computer Systems",
+  "receivedOn": "2026-11-17",
+  "challanNo": "DC-4481",
+  "lines": [
+    {
+      "item": "Laptop",
+      "orderedQty": 5,
+      "receivedQty": 5,
+      "acceptedQty": 4,
+      "rejectedQty": 1
+    }
+  ],
+  "remark": "Fictional goods receipt for testing the invoice agent."
+}

@@ -1,0 +1,79 @@
+AP AGENT - DEMO BATCH PACK
+==========================
+
+Purpose
+-------
+Prepare fictional PO/GRN fixtures and provide invoice PDFs for end-to-end
+regression testing. No real procurement records or payments are represented.
+
+Installation
+------------
+1. Extract this folder's contents into the ap-agent project root.
+   You should see prepare_demo_batch.py and demo_test_invoices/ beside app.py.
+2. From the ap-agent PowerShell folder, run:
+       python prepare_demo_batch.py
+3. The script refuses to overwrite any existing PO/GRN demo target.
+4. It backs up malformed canonical PO-101 and GRN-101 before enriching them
+   from dataset/reference_data.json. Existing local status/date values are kept.
+
+DEMO TEST CASES
+---------------
+PO-130 + GRN-130: clean_match.pdf
+  Expected: matching PO, vendor, accepted quantity, 18% GST and IT budget.
+  Invoice: 5 laptops x INR 1,000; subtotal INR 5,000; GST INR 900; total INR 5,900.
+
+PO-131 + GRN-131: quantity_mismatch.pdf
+  Expected: invoice quantity 6 exceeds PO/accepted GRN quantity 5.
+
+PO-132 + GRN-132: price_mismatch.pdf
+  Expected: invoice unit price INR 1,200 differs from PO INR 1,000.
+
+PO-133 + GRN-133: wrong_vendor.pdf
+  Expected: invoice supplier Acme Traders differs from PO supplier Nova Computer Systems.
+
+PO-134 + GRN-134: wrong_gst.pdf
+  Expected: invoice GST rate 12% differs from PO expected rate 18%.
+
+PO-135 with NO GRN: missing_grn.pdf
+  Expected: missing GRN / receipt evidence is flagged.
+
+PO-136 + GRN-136: partial_receipt.pdf
+  Expected: only 3 of 5 units accepted; invoice for 5 exceeds accepted quantity.
+
+PO-137 + GRN-137: budget_exceeded.pdf
+  Expected: DEPT-EXAM has INR 5,000 remaining in fictional reference data;
+  invoice total is INR 5,900, so budget check should flag insufficient budget.
+
+missing_po.pdf
+  Expected: PO-9999 is not found.
+
+DUPLICATE TEST
+--------------
+Upload clean_match.pdf once, then select the exact same file again.
+The second attempt should be blocked as a duplicate. Do not rename/re-export it;
+the duplicate detector compares file bytes.
+
+RECOMMENDED DEMO ORDER
+----------------------
+1. Run prepare_demo_batch.py.
+2. Log in as Vendor and upload clean_match.pdf.
+3. Inspect AI verification and ensure the expected checks are actually present.
+4. Upload the remaining discrepancy PDFs one at a time; do not approve them.
+5. Re-upload the exact clean_match.pdf once to test duplicate prevention.
+6. Take only the clean invoice through Department Head -> Finance Officer ->
+   Final Approver.
+7. Verify exactly one payment schedule was created for its approval request.
+8. Verify payment history and audit events. Use mock records only; no bank transfer.
+
+IMPORTANT STORAGE NOTE
+---------------------
+The application stores one canonical invoice record per PO ID. Each scenario
+therefore has its own PO ID. The same clean invoice PDF is reused for the
+intentional duplicate-upload test.
+
+CAUTION
+-------
+Do not bulk-schedule historical approvals. Several older approval requests
+have missing extraction cache files. Do not mark a payment paid during a demo
+unless explicitly testing the mock settlement-recording function and using a
+clearly fictional payment record.

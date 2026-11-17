@@ -1,0 +1,34 @@
+{
+  "invoice_number": "ACS-8842",
+  "vendor": "Apex Cloud Solutions",
+  "date": "Nov 04, 2026",
+  "po_number": "PO-2026-99A",
+  "items": [
+    {
+      "name": "Cloud Server Infrastructure Hosting (Monthly)",
+      "quantity": 1,
+      "unit_price": 450.0,
+      "line_total": 450.0
+    },
+    {
+      "name": "Database Optimization & Maintenance",
+      "quantity": 8,
+      "unit_price": 125.0,
+      "line_total": 1000.0
+    },
+    {
+      "name": "SSL Security Certificate Renewal (2-Year)",
+      "quantity": 2,
+      "unit_price": 85.0,
+      "line_total": 170.0
+    },
+    {
+      "name": "24/7 Technical Support Retainer",
+      "quantity": 1,
+      "unit_price": 300.0,
+      "line_total": 300.0
+    }
+  ],
+  "tax": 0.0,
+  "total": 1920.0
+}

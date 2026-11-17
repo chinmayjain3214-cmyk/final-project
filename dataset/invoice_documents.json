@@ -1,0 +1,550 @@
+[
+  {
+    "case_id": "01_normal_gst_invoice",
+    "document": {
+      "document_type": "GST_TAX_INVOICE",
+      "invoice_number": "INV-2026-501",
+      "invoice_date": "2026-11-02",
+      "vendor": {
+        "name": "Metro Stationery House",
+        "gstin": "08AABCM1234F1Z5",
+        "address": "Jaipur, Rajasthan"
+      },
+      "buyer": "ABC Technologies",
+      "po_reference": "PO-101",
+      "items": [
+        {
+          "description": "Printer Paper",
+          "quantity": 50,
+          "unit": "ream",
+          "unit_price": 280,
+          "amount": 14000
+        },
+        {
+          "description": "Stapler",
+          "quantity": 20,
+          "unit": "piece",
+          "unit_price": 150,
+          "amount": 3000
+        }
+      ],
+      "subtotal": 17000,
+      "cgst": 1530,
+      "sgst": 1530,
+      "total": 20060,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "INV-BUDGET-FIT",
+    "document": {
+      "invoice_number": "INV-BFIT-001",
+      "invoice_date": "2026-01-20",
+      "vendor": "Acme Traders",
+      "vendor_id": "VEN-001",
+      "po_number": "PO-2026-101",
+      "currency": "INR",
+      "items": [
+        {"sku": "PAPER-A4", "description": "Printer paper", "quantity": 100, "unit_price": 120.00, "line_total": 12000.00}
+      ],
+      "subtotal": 12000.00,
+      "tax": 2160.00,
+      "total": 14160.00
+    }
+  },
+  {
+    "case_id": "INV-BUDGET-EXCEEDED",
+    "document": {
+      "invoice_number": "INV-BEXC-001",
+      "invoice_date": "2026-01-20",
+      "vendor": "Acme Traders",
+      "vendor_id": "VEN-001",
+      "po_number": "PO-2026-101",
+      "currency": "INR",
+      "items": [
+        {"sku": "PAPER-A4", "description": "Printer paper", "quantity": 2000, "unit_price": 120.00, "line_total": 240000.00}
+      ],
+      "subtotal": 240000.00,
+      "tax": 43200.00,
+      "total": 283200.00
+    }
+  },
+  {
+    "case_id": "02_unmapped_po_reference",
+    "document": {
+      "document_type": "COMMERCIAL_INVOICE",
+      "invoice_no": "MT-882",
+      "date": "2026-11-03",
+      "supplier_name": "Metro Stationery House",
+      "reference_details": {
+        "customer_order": "ORD/26/102",
+        "reference_type": "Purchase Order"
+      },
+      "products": [
+        {
+          "product_name": "Office Files",
+          "qty": 100,
+          "rate": 45,
+          "line_amount": 4500
+        }
+      ],
+      "net_payable": 4500,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "03_quantity_billed_exceeds_received",
+    "document": {
+      "document_type": "TAX_INVOICE",
+      "invoice_number": "EL-2026-119",
+      "vendor_name": "Digital World Electronics",
+      "po_number": "PO-103",
+      "invoice_date": "2026-11-04",
+      "line_items": [
+        {
+          "name": "Wireless Keyboard",
+          "quantity": 25,
+          "unit_price": 1200,
+          "total": 30000
+        }
+      ],
+      "invoice_total": 30000,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "04_po_unit_price_mismatch",
+    "document": {
+      "document_type": "SALES_INVOICE",
+      "invoice_id": "SI-771",
+      "supplier": "Global Industrial Supplies",
+      "purchase_order": "PO-104",
+      "invoice_date": "2026-11-05",
+      "items": [
+        {
+          "description": "Industrial Safety Helmet",
+          "quantity": 40,
+          "unit_rate": 950,
+          "discount_percent": 5,
+          "tax_percent": 18,
+          "line_total": 36100
+        }
+      ],
+      "subtotal": 36100,
+      "tax_amount": 6498,
+      "grand_total": 42598,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "05_service_invoice_with_confirmation",
+    "document": {
+      "document_type": "SERVICE_INVOICE",
+      "invoice_number": "SERV-0098",
+      "vendor": {
+        "name": "BrightPath Consulting",
+        "vendor_code": "VEN-205"
+      },
+      "invoice_date": "2026-11-06",
+      "po_reference": "PO-105",
+      "service_details": {
+        "service_name": "Monthly IT Support",
+        "service_period": {
+          "from": "2026-10-01",
+          "to": "2026-10-31"
+        },
+        "hours": 40,
+        "hourly_rate": 1500
+      },
+      "subtotal": 60000,
+      "gst": 10800,
+      "amount_due": 70800,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "06_foreign_currency_fx_review",
+    "document": {
+      "document_type": "FOREIGN_CURRENCY_INVOICE",
+      "invoice_number": "EXP-2026-77",
+      "vendor_name": "TechSource International",
+      "invoice_date": "2026-11-06",
+      "purchase_order_reference": "PO-106",
+      "currency": "USD",
+      "items": [
+        {
+          "description": "Cloud Server License",
+          "quantity": 10,
+          "unit_price": 120,
+          "amount": 1200
+        }
+      ],
+      "subtotal": 1200,
+      "tax": 0,
+      "total": 1200,
+      "exchange_rate": 84.5,
+      "converted_amount_inr": 101400
+    }
+  },
+  {
+    "case_id": "07_duplicate_of_case_01",
+    "document": {
+      "document_type": "GST_INVOICE",
+      "document_id": "UPLOAD-9981",
+      "invoice_number": "INV-2026-501",
+      "invoice_date": "2026-11-02",
+      "vendor": "Metro Stationery House",
+      "po_reference": "PO-101",
+      "items": [
+        {
+          "description": "Printer Paper",
+          "quantity": 50,
+          "unit_price": 280,
+          "amount": 14000
+        },
+        {
+          "description": "Stapler",
+          "quantity": 20,
+          "unit_price": 150,
+          "amount": 3000
+        }
+      ],
+      "subtotal": 17000,
+      "cgst": 1530,
+      "sgst": 1530,
+      "total": 20060,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "08_missing_po_reference",
+    "document": {
+      "document_type": "TAX_INVOICE",
+      "invoice_number": "FIN-442",
+      "invoice_date": "2026-11-07",
+      "supplier": "Fineline Furniture Works",
+      "buyer": "ABC Technologies",
+      "purchase_reference": null,
+      "items": [
+        {
+          "description": "Executive Office Desk",
+          "quantity": 4,
+          "unit_price": 12500,
+          "amount": 50000
+        },
+        {
+          "description": "Visitor Chair",
+          "quantity": 8,
+          "unit_price": 2500,
+          "amount": 20000
+        }
+      ],
+      "subtotal": 70000,
+      "tax": 12600,
+      "invoice_total": 82600,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "09_arithmetic_mismatch",
+    "document": {
+      "document_type": "INVOICE",
+      "invoice_number": "PKG-778",
+      "vendor_name": "Packwell Industries",
+      "invoice_date": "2026-11-08",
+      "po_number": "PO-109",
+      "line_items": [
+        {
+          "description": "Corrugated Shipping Boxes",
+          "quantity": 500,
+          "unit_price": 30,
+          "line_total": 15000
+        },
+        {
+          "description": "Bubble Wrap Rolls",
+          "quantity": 20,
+          "unit_price": 400,
+          "line_total": 8000
+        }
+      ],
+      "subtotal": 23000,
+      "discount": 1000,
+      "tax": 3960,
+      "grand_total": 28000,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "10_credit_note_special_handling",
+    "document": {
+      "document_type": "CREDIT_NOTE",
+      "credit_note_number": "CN-2026-019",
+      "original_invoice_number": "INV-2026-220",
+      "vendor": "Prime Office Solutions",
+      "reference_po": "PO-110",
+      "issue_date": "2026-11-09",
+      "reason": "Goods returned due to damaged packaging",
+      "items": [
+        {
+          "description": "Storage Cabinet",
+          "quantity": 2,
+          "unit_price": 8500,
+          "credit_amount": 17000
+        }
+      ],
+      "subtotal": 17000,
+      "tax_adjustment": 3060,
+      "total_credit": 20060,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "11_vendor_gstin_mismatch",
+    "document": {
+      "document_type": "GST_TAX_INVOICE",
+      "invoice_number": "MTS-111",
+      "invoice_date": "2026-11-10",
+      "vendor": {
+        "name": "Metro Stationery House",
+        "gstin": "08AABCM1234F1Z9"
+      },
+      "buyer": "ABC Technologies",
+      "po_reference": "PO-111",
+      "items": [
+        {
+          "description": "A4 Paper Pack",
+          "quantity": 5,
+          "unit": "pack",
+          "unit_price": 280,
+          "amount": 1400
+        }
+      ],
+      "subtotal": 1400,
+      "cgst": 126,
+      "sgst": 126,
+      "total": 1652,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "12_missing_goods_receipt",
+    "document": {
+      "document_type": "TAX_INVOICE",
+      "invoice_number": "APX-112",
+      "invoice_date": "2026-11-10",
+      "vendor_name": "Apex Cloud Solutions",
+      "po_number": "PO-112",
+      "items": [
+        {
+          "description": "24-inch Monitor",
+          "quantity": 15,
+          "unit_price": 15000,
+          "amount": 225000
+        }
+      ],
+      "subtotal": 225000,
+      "cgst": 20250,
+      "sgst": 20250,
+      "total": 265500,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "13_partial_delivery_multiple_receipts",
+    "document": {
+      "document_type": "TAX_INVOICE",
+      "invoice_number": "NOVA-113-01",
+      "invoice_date": "2026-11-10",
+      "vendor_name": "Nova Computer Systems",
+      "po_number": "PO-113",
+      "items": [
+        {
+          "description": "Business Laptop",
+          "quantity": 70,
+          "unit_price": 8000,
+          "amount": 560000
+        }
+      ],
+      "subtotal": 560000,
+      "cgst": 50400,
+      "sgst": 50400,
+      "total": 660800,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "14_cumulative_po_overbilling",
+    "document": {
+      "document_type": "TAX_INVOICE",
+      "invoice_number": "CHAIR-114-02",
+      "invoice_date": "2026-11-10",
+      "vendor_name": "Modern Office Furnishings",
+      "po_number": "PO-114",
+      "items": [
+        {
+          "description": "Office Chair",
+          "quantity": 60,
+          "unit_price": 1000,
+          "amount": 60000
+        }
+      ],
+      "subtotal": 60000,
+      "cgst": 5400,
+      "sgst": 5400,
+      "total": 70800,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "15_cancelled_purchase_order",
+    "document": {
+      "document_type": "TAX_INVOICE",
+      "invoice_number": "APX-115",
+      "invoice_date": "2026-11-10",
+      "vendor_name": "Apex Cloud Solutions",
+      "po_number": "PO-115",
+      "items": [
+        {
+          "description": "Rack Server",
+          "quantity": 5,
+          "unit_price": 30000,
+          "amount": 150000
+        }
+      ],
+      "subtotal": 150000,
+      "cgst": 13500,
+      "sgst": 13500,
+      "total": 177000,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "16_gst_rate_mismatch",
+    "document": {
+      "document_type": "GST_TAX_INVOICE",
+      "invoice_number": "TAX-116",
+      "invoice_date": "2026-11-10",
+      "vendor_name": "SecureTech Supplies",
+      "po_number": "PO-116",
+      "items": [
+        {
+          "description": "Network Firewall Appliance",
+          "quantity": 10,
+          "unit_price": 1000,
+          "amount": 10000
+        }
+      ],
+      "subtotal": 10000,
+      "cgst": 900,
+      "sgst": 800,
+      "total": 11700,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "17_price_variance_within_tolerance",
+    "document": {
+      "document_type": "TAX_INVOICE",
+      "invoice_number": "SUP-117",
+      "invoice_date": "2026-11-10",
+      "vendor_name": "Precision Office Supplies",
+      "po_number": "PO-117",
+      "items": [
+        {
+          "description": "Laser Toner Cartridge",
+          "quantity": 10,
+          "unit_price": 1005,
+          "amount": 10050
+        }
+      ],
+      "subtotal": 10050,
+      "cgst": 904.5,
+      "sgst": 904.5,
+      "total": 11859,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "18_blurry_rotated_scan",
+    "source_document": {
+      "file_name": "18_blurry_rotated_scan.pdf",
+      "quality_flags": [
+        "blurred",
+        "rotated",
+        "partially_cut_off"
+      ],
+      "note": "This is metadata for a scan-quality test. An actual blurry/rotated PDF or image is required to test OCR quality."
+    },
+    "document": {
+      "document_type": "UNKNOWN_OR_PARTIAL",
+      "invoice_number": null,
+      "invoice_date": "2026-11-10",
+      "vendor_name": "Partially read: possibly Delta Lab Supplies",
+      "po_number": null,
+      "items": [
+        {
+          "description": "Partially readable laboratory item",
+          "quantity": null,
+          "unit_price": null,
+          "amount": null
+        }
+      ],
+      "total": null,
+      "currency": "INR"
+    }
+  },
+  {
+    "case_id": "INV-BUDGET-FIT",
+    "document": {
+      "invoice_number": "INV-BFIT-001",
+      "invoice_date": "2026-01-20",
+      "vendor": "Acme Traders",
+      "vendor_id": "VEN-001",
+      "vendor_gstin": "27ABCDE1234F1Z5",
+      "po_reference": "PO-119",
+      "po_number": "PO-119",
+      "currency": "INR",
+      "items": [
+        {
+          "sku": "PAPER-A4",
+          "description": "Printer paper",
+          "quantity": 100,
+          "unit_price": 120.00,
+          "line_total": 12000.00
+        }
+      ],
+      "subtotal": 12000.00,
+      "cgst": 1080.00,
+      "sgst": 1080.00,
+      "igst": null,
+      "total": 14160.00
+    }
+  },
+  {
+    "case_id": "INV-BUDGET-EXCEEDED",
+    "document": {
+      "invoice_number": "INV-BEXC-001",
+      "invoice_date": "2026-01-20",
+      "vendor": "Acme Traders",
+      "vendor_id": "VEN-001",
+      "vendor_gstin": "27ABCDE1234F1Z5",
+      "po_reference": "PO-120",
+      "po_number": "PO-120",
+      "currency": "INR",
+      "items": [
+        {
+          "sku": "PAPER-A4",
+          "description": "Printer paper",
+          "quantity": 2000,
+          "unit_price": 120.00,
+          "line_total": 240000.00
+        }
+      ],
+      "subtotal": 240000.00,
+      "cgst": 21600.00,
+      "sgst": 21600.00,
+      "igst": null,
+      "total": 283200.00
+    }
+  }
+]

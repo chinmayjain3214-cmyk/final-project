@@ -1,0 +1,179 @@
+[
+  {
+    "case_id": "INV-BUDGET-FIT",
+    "sequence": 19,
+    "expected_recommendation": "READY_FOR_APPROVAL",
+    "expected_findings": []
+  },
+  {
+    "case_id": "INV-BUDGET-EXCEEDED",
+    "sequence": 20,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": ["BUDGET_EXCEEDED"]
+  },
+  
+  {
+    "case_id": "01_normal_gst_invoice",
+    "sequence": 1,
+    "expected_recommendation": "READY_FOR_APPROVAL",
+    "expected_findings": [],
+    "notes": "Baseline: vendor, PO, quantities, received quantities and arithmetic agree."
+  },
+  {
+    "case_id": "02_unmapped_po_reference",
+    "sequence": 2,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "PO_REFERENCE_UNMAPPED"
+    ],
+    "notes": "ORD/26/102 is labelled as a purchase-order reference but is not mapped to a known PO."
+  },
+  {
+    "case_id": "03_quantity_billed_exceeds_received",
+    "sequence": 3,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "GRN_QUANTITY_SHORTAGE"
+    ],
+    "notes": "Invoice bills 25 keyboards; accepted GRN quantity is 18."
+  },
+  {
+    "case_id": "04_po_unit_price_mismatch",
+    "sequence": 4,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "PO_UNIT_PRICE_MISMATCH"
+    ],
+    "notes": "Invoice unit rate is 950 with 5% discount; PO approved unit rate is 850. Compare price/discount according to configured policy."
+  },
+  {
+    "case_id": "05_service_invoice_with_confirmation",
+    "sequence": 5,
+    "expected_recommendation": "READY_FOR_APPROVAL",
+    "expected_findings": [],
+    "notes": "Service invoice: compare to service confirmation, not a physical goods receipt."
+  },
+  {
+    "case_id": "06_foreign_currency_fx_review",
+    "sequence": 6,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "FX_RATE_MISMATCH"
+    ],
+    "notes": "Invoice uses 84.50 INR/USD while synthetic internal reference for that date is 84.20."
+  },
+  {
+    "case_id": "07_duplicate_of_case_01",
+    "sequence": 7,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "DUPLICATE_INVOICE"
+    ],
+    "duplicate_of": "01_normal_gst_invoice",
+    "run_after": [
+      "01_normal_gst_invoice"
+    ],
+    "notes": "Same vendor, invoice number, PO and amounts as case 01. Prior invoice must be seeded or case 01 processed first."
+  },
+  {
+    "case_id": "08_missing_po_reference",
+    "sequence": 8,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "MISSING_PO_REFERENCE"
+    ],
+    "notes": "No PO reference is present. Could be an exception workflow, but requires manual handling."
+  },
+  {
+    "case_id": "09_arithmetic_mismatch",
+    "sequence": 9,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "INVOICE_ARITHMETIC_MISMATCH"
+    ],
+    "notes": "Expected total = (23,000 - 1,000) + 3,960 = 25,960; document states 28,000."
+  },
+  {
+    "case_id": "10_credit_note_special_handling",
+    "sequence": 10,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "CREDIT_NOTE_SPECIAL_HANDLING"
+    ],
+    "notes": "Original invoice and accepted goods-return record exist. Credit notes still enter human review in this demo workflow."
+  },
+  {
+    "case_id": "11_vendor_gstin_mismatch",
+    "sequence": 11,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "VENDOR_GSTIN_MISMATCH"
+    ],
+    "notes": "Vendor name and PO point to Metro Stationery House, but invoice GSTIN differs from vendor master."
+  },
+  {
+    "case_id": "12_missing_goods_receipt",
+    "sequence": 12,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "MISSING_GOODS_RECEIPT"
+    ],
+    "notes": "PO exists but no GRN is recorded for the invoiced monitors."
+  },
+  {
+    "case_id": "13_partial_delivery_multiple_receipts",
+    "sequence": 13,
+    "expected_recommendation": "READY_FOR_APPROVAL",
+    "expected_findings": [],
+    "notes": "Two accepted GRNs total 70 laptops. Invoice bills 70; PO allows 100. Aggregate receipts across GRNs."
+  },
+  {
+    "case_id": "14_cumulative_po_overbilling",
+    "sequence": 14,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "CUMULATIVE_PO_OVERBILL"
+    ],
+    "run_after": [
+      "CHAIR-114-01"
+    ],
+    "notes": "Prior invoice bills 60 chairs; current invoice bills 60 more; PO and GRN quantity are 100."
+  },
+  {
+    "case_id": "15_cancelled_purchase_order",
+    "sequence": 15,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "CANCELLED_PO"
+    ],
+    "notes": "Invoice references PO-115, which is CANCELLED."
+  },
+  {
+    "case_id": "16_gst_rate_mismatch",
+    "sequence": 16,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "GST_RATE_MISMATCH"
+    ],
+    "notes": "PO policy says 18% combined GST; invoice splits 9% CGST and 8% SGST (17% total). Total equals the incorrectly stated tax, so this isolates tax-rate mismatch."
+  },
+  {
+    "case_id": "17_price_variance_within_tolerance",
+    "sequence": 17,
+    "expected_recommendation": "READY_FOR_APPROVAL",
+    "expected_findings": [
+      "PRICE_VARIANCE_WITHIN_TOLERANCE"
+    ],
+    "notes": "Invoice rate 1005 vs PO 1000 is a 0.5% increase, within the PO's explicit 1% tolerance."
+  },
+  {
+    "case_id": "18_blurry_rotated_scan",
+    "sequence": 18,
+    "expected_recommendation": "NEEDS_HUMAN_REVIEW",
+    "expected_findings": [
+      "LOW_DOCUMENT_QUALITY",
+      "INCOMPLETE_EXTRACTION"
+    ],
+    "notes": "Metadata describes the scan test. An actual blurry/rotated PDF or image is required for OCR testing."
+  }
+]

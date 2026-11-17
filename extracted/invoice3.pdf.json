@@ -1,0 +1,28 @@
+{
+  "invoice_number": "INV-102-B",
+  "vendor": "QuickPrint & Supplies Co.",
+  "date": "05/11/2026",
+  "po_number": "PO-OO1-TYPO",
+  "items": [
+    {
+      "name": "Ball point penz (Blue - Pack of 10)",
+      "quantity": 3,
+      "unit_price": 15.0,
+      "line_total": 45.0
+    },
+    {
+      "name": "A4 Printing Paper reams",
+      "quantity": 10,
+      "unit_price": 280.0,
+      "line_total": 2800.0
+    },
+    {
+      "name": "Staplerr heavy duty (Misspelled)",
+      "quantity": 1,
+      "unit_price": 450.0,
+      "line_total": 450.0
+    }
+  ],
+  "tax": 164.75,
+  "total": 3459.75
+}

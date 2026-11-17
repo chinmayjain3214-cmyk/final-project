@@ -1,0 +1,64 @@
+{
+  "invoice_number": "287",
+  "vendor": "SAMSUDDIN SIDDIQUI",
+  "date": "28/10/2024",
+  "po_number": null,
+  "items": [
+    {
+      "name": "Falash Tank Push Button",
+      "quantity": "1 set",
+      "unit_price": "240",
+      "line_total": "240"
+    },
+    {
+      "name": "Zed EXP Brash",
+      "quantity": "1",
+      "unit_price": "550",
+      "line_total": "550"
+    },
+    {
+      "name": "Bhathroom comot English New fiting",
+      "quantity": "2",
+      "unit_price": "230",
+      "line_total": "460"
+    },
+    {
+      "name": "Preshar Hat univarbras",
+      "quantity": "2",
+      "unit_price": "450",
+      "line_total": "900"
+    },
+    {
+      "name": "Pipe Zed EXP and Preshar Pipe",
+      "quantity": "2",
+      "unit_price": "195",
+      "line_total": "390"
+    },
+    {
+      "name": "Plamber charge",
+      "quantity": "1",
+      "unit_price": "2300",
+      "line_total": "2300"
+    },
+    {
+      "name": "Pata Bolt New",
+      "quantity": "1",
+      "unit_price": "836",
+      "line_total": "836"
+    },
+    {
+      "name": "Hadrotics",
+      "quantity": "1",
+      "unit_price": "750",
+      "line_total": "750"
+    },
+    {
+      "name": "Ubur charge",
+      "quantity": "1",
+      "unit_price": "800",
+      "line_total": "800"
+    }
+  ],
+  "tax": null,
+  "total": "7226"
+}

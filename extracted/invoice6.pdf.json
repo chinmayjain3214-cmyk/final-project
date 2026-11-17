@@ -1,0 +1,28 @@
+{
+  "invoice_number": "123456",
+  "vendor": "ALBERT SORT",
+  "date": "12 JANUARY, 2027",
+  "po_number": "0122",
+  "items": [
+    {
+      "name": "Item 1",
+      "quantity": 1,
+      "unit_price": 10.0,
+      "line_total": 10.0
+    },
+    {
+      "name": "Item 2",
+      "quantity": 1,
+      "unit_price": 10.0,
+      "line_total": 10.0
+    },
+    {
+      "name": "Item 3",
+      "quantity": 1,
+      "unit_price": 10.0,
+      "line_total": 10.0
+    }
+  ],
+  "tax": 0.0,
+  "total": 30.0
+}
