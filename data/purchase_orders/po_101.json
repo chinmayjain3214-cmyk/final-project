@@ -1,0 +1,30 @@
+{
+  "po_number": "PO-101",
+  "vendor_id": "VEN-101",
+  "vendor_name": "Metro Stationery House",
+  "status": "RECEIVED",
+  "currency": "INR",
+  "price_tolerance_percent": 0,
+  "items": [
+    {
+      "description": "Printer Paper",
+      "quantity_ordered": 50,
+      "unit": "ream",
+      "approved_unit_price": 280,
+      "tax_percent": 18
+    },
+    {
+      "description": "Stapler",
+      "quantity_ordered": 20,
+      "unit": "piece",
+      "approved_unit_price": 150,
+      "tax_percent": 18
+    }
+  ],
+  "subtotal": 17000,
+  "notes": "Baseline PO for normal GST invoice and duplicate test.",
+  "po_id": 101,
+  "record_id": "po_101",
+  "total_amount": 20060.0,
+  "received_date": "2026-11-13"
+}

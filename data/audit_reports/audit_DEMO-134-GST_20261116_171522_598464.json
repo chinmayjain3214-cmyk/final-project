@@ -1,0 +1,10 @@
+{
+  "invoice_number": "DEMO-134-GST",
+  "po_id": 134,
+  "source_invoice_file": "inv_134.json",
+  "status": "NEEDS_HUMAN_REVIEW",
+  "matching_result": "NO_DISCREPANCIES_FOUND",
+  "recommendation": "MATCHED_PENDING_HUMAN_APPROVAL",
+  "generated_at": "2026-11-16T17:15:22+05:30",
+  "discrepancies": []
+}

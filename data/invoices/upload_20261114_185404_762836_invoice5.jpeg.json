@@ -1,0 +1,130 @@
+{
+  "_cache_version": 2,
+  "_source_size": 325112,
+  "_source_mtime_ns": 1794662644776924600,
+  "data": {
+    "document_type": "Invoice",
+    "invoice_number": "287",
+    "credit_note_number": null,
+    "invoice_date": "28/10/2024",
+    "date": "28/10/2024",
+    "vendor": "SAMSUDDIN SIDDIQUI",
+    "vendor_name": "SAMSUDDIN SIDDIQUI",
+    "gstin": null,
+    "po_reference": null,
+    "po_number": null,
+    "currency": "Rs.",
+    "items": [
+      {
+        "name": "Falash Tank Push Button",
+        "description": "Falash Tank Push Button",
+        "quantity": 1.0,
+        "unit": "set",
+        "unit_price": 240.0,
+        "line_total": 240.0,
+        "amount": 240.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "Zed. EXP. Brash.",
+        "description": "Zed. EXP. Brash.",
+        "quantity": 1.0,
+        "unit": null,
+        "unit_price": 550.0,
+        "line_total": 550.0,
+        "amount": 550.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "Bhathroom comot Engish New. Fiting.",
+        "description": "Bhathroom comot Engish New. Fiting.",
+        "quantity": 2.0,
+        "unit": null,
+        "unit_price": 230.0,
+        "line_total": 460.0,
+        "amount": 460.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "Preshar. Nat. univarbas",
+        "description": "Preshar. Nat. univarbas",
+        "quantity": 2.0,
+        "unit": null,
+        "unit_price": 450.0,
+        "line_total": 900.0,
+        "amount": 900.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "Pipe. Zed. EXP- and Preshar Pipe",
+        "description": "Pipe. Zed. EXP- and Preshar Pipe",
+        "quantity": 2.0,
+        "unit": null,
+        "unit_price": 195.0,
+        "line_total": 390.0,
+        "amount": 390.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "Plamber charge.",
+        "description": "Plamber charge.",
+        "quantity": 1.0,
+        "unit": null,
+        "unit_price": 2300.0,
+        "line_total": 2300.0,
+        "amount": 2300.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "Pata. Bolt.- New",
+        "description": "Pata. Bolt.- New",
+        "quantity": 1.0,
+        "unit": null,
+        "unit_price": 836.0,
+        "line_total": 836.0,
+        "amount": 836.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "Hadrotics. was",
+        "description": "Hadrotics. was",
+        "quantity": 1.0,
+        "unit": null,
+        "unit_price": 750.0,
+        "line_total": 750.0,
+        "amount": 750.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "Ubur. charge",
+        "description": "Ubur. charge",
+        "quantity": 1.0,
+        "unit": null,
+        "unit_price": 800.0,
+        "line_total": 800.0,
+        "amount": 800.0,
+        "discount_percent": null,
+        "tax_percent": null
+      }
+    ],
+    "subtotal": null,
+    "cgst": null,
+    "sgst": null,
+    "igst": null,
+    "shipping": null,
+    "discount": null,
+    "total": 7226.0,
+    "exchange_rate": null,
+    "service_details": {
+      "hours": null
+    }
+  }
+}

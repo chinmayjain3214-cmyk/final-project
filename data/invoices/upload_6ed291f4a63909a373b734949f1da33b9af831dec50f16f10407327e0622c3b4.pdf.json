@@ -1,0 +1,65 @@
+{
+  "_cache_version": 2,
+  "_source_size": 36696,
+  "_source_mtime_ns": 1794713096882251600,
+  "data": {
+    "document_type": "invoice",
+    "invoice_number": "US-001",
+    "credit_note_number": null,
+    "invoice_date": "11/02/2019",
+    "date": "11/02/2019",
+    "vendor": "East Repair Inc.",
+    "vendor_name": "East Repair Inc.",
+    "gstin": null,
+    "po_reference": "2312/2019",
+    "po_number": "2312/2019",
+    "currency": "$",
+    "items": [
+      {
+        "name": "Front and rear brake cables",
+        "description": "Front and rear brake cables",
+        "quantity": 1.0,
+        "unit": null,
+        "unit_price": 100.0,
+        "line_total": 100.0,
+        "amount": 100.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "New set of pedal arms",
+        "description": "New set of pedal arms",
+        "quantity": 2.0,
+        "unit": null,
+        "unit_price": 15.0,
+        "line_total": 30.0,
+        "amount": 30.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "Labor 3hrs",
+        "description": "Labor 3hrs",
+        "quantity": 3.0,
+        "unit": "hrs",
+        "unit_price": 5.0,
+        "line_total": 15.0,
+        "amount": 15.0,
+        "discount_percent": null,
+        "tax_percent": null
+      }
+    ],
+    "subtotal": 145.0,
+    "cgst": null,
+    "sgst": null,
+    "igst": null,
+    "tax": 9.06,
+    "shipping": null,
+    "discount": null,
+    "total": 154.06,
+    "exchange_rate": null,
+    "service_details": {
+      "hours": 3.0
+    }
+  }
+}

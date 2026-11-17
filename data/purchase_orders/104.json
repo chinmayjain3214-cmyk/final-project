@@ -1,0 +1,12 @@
+{
+    "po_id": 104,
+    "vendor_id": 1,
+    "total_amount": 5000.00,
+    "items": [
+        {
+            "sku": "LAPTOP-01",
+            "quantity": 5,
+            "unit_price": 1000.00
+        }
+    ]
+}

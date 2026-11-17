@@ -1,0 +1,42 @@
+{
+  "_cache_version": 2,
+  "_source_size": 28153,
+  "_source_mtime_ns": 1794750755785587900,
+  "data": {
+    "document_type": "invoice",
+    "invoice_number": "SUP-117",
+    "credit_note_number": null,
+    "invoice_date": "10 November 2026",
+    "date": "10 November 2026",
+    "vendor": "Precision Office Supplies",
+    "vendor_name": "Precision Office Supplies",
+    "gstin": null,
+    "po_reference": "PO-117",
+    "po_number": "PO-117",
+    "currency": "INR",
+    "items": [
+      {
+        "name": "Laser Toner Cartridge",
+        "description": "Laser Toner Cartridge",
+        "quantity": 10.0,
+        "unit": null,
+        "unit_price": 1005.0,
+        "line_total": 10050.0,
+        "amount": 10050.0,
+        "discount_percent": null,
+        "tax_percent": null
+      }
+    ],
+    "subtotal": 10050.0,
+    "cgst": 904.5,
+    "sgst": 904.5,
+    "igst": null,
+    "shipping": null,
+    "discount": null,
+    "total": 11859.0,
+    "exchange_rate": null,
+    "service_details": {
+      "hours": null
+    }
+  }
+}

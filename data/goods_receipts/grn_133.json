@@ -1,0 +1,23 @@
+{
+  "po_id": 133,
+  "record_id": "grn_133",
+  "po_number": "PO-133",
+  "grn_number": "GRN-133",
+  "vendor": "Nova Computer Systems",
+  "received_date": "2026-11-15",
+  "status": "ACCEPTED",
+  "items": [
+    {
+      "description": "Laptop",
+      "sku": "LAPTOP-01",
+      "quantity_received": 5,
+      "quantity_accepted": 5,
+      "quantity_rejected": 0
+    }
+  ],
+  "total_received": 5,
+  "total_accepted": 5,
+  "total_rejected": 0,
+  "total_pending_inspection": 0,
+  "notes": "Fictional regression-test receipt. Not an actual delivery."
+}

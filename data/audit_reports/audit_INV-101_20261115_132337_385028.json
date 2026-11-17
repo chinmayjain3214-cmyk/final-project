@@ -1,0 +1,27 @@
+{
+  "invoice_number": "INV-101",
+  "po_id": 101,
+  "source_invoice_file": "inv_101.json",
+  "status": "NEEDS_HUMAN_REVIEW",
+  "matching_result": "DISCREPANCIES_FOUND",
+  "recommendation": "FLAG_FOR_HUMAN_REVIEW",
+  "generated_at": "2026-11-15T13:23:37+05:30",
+  "discrepancies": [
+    {
+      "type": "PO_VENDOR_MISSING",
+      "details": "The purchase order does not contain a vendor ID or vendor name."
+    },
+    {
+      "type": "PO_ITEMS_MISSING",
+      "details": "The purchase order has no line items available for item-level matching."
+    },
+    {
+      "type": "INVOICE_ITEMS_MISSING",
+      "details": "The canonical invoice has no line items; item-level quantity and price matching cannot be completed."
+    },
+    {
+      "type": "GRN_ITEMS_MISSING",
+      "details": "The goods receipt has no item-level quantities; accepted quantities cannot be verified."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "_cache_version": 2,
+  "_source_size": 28380,
+  "_source_mtime_ns": 1794684923663391800,
+  "data": {
+    "document_type": "tax invoice",
+    "invoice_number": "EL-2026-119",
+    "credit_note_number": null,
+    "invoice_date": "04-Nov-2026",
+    "date": "04-Nov-2026",
+    "vendor": "Digital World Electronics",
+    "vendor_name": "Digital World Electronics",
+    "gstin": null,
+    "po_reference": "PO-103",
+    "po_number": "PO-103",
+    "currency": "INR",
+    "items": [
+      {
+        "name": "Wireless Keyboard",
+        "description": "Wireless Keyboard",
+        "quantity": 25.0,
+        "unit": null,
+        "unit_price": 1200.0,
+        "line_total": 30000.0,
+        "amount": 30000.0,
+        "discount_percent": null,
+        "tax_percent": null
+      }
+    ],
+    "subtotal": 30000.0,
+    "cgst": null,
+    "sgst": null,
+    "igst": null,
+    "tax": 0.0,
+    "shipping": null,
+    "discount": null,
+    "total": 30000.0,
+    "exchange_rate": null,
+    "service_details": {
+      "hours": null
+    }
+  }
+}

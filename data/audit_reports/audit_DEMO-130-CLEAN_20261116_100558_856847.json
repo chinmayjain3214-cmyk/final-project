@@ -1,0 +1,10 @@
+{
+  "invoice_number": "DEMO-130-CLEAN",
+  "po_id": 130,
+  "source_invoice_file": "inv_130.json",
+  "status": "NEEDS_HUMAN_REVIEW",
+  "matching_result": "NO_DISCREPANCIES_FOUND",
+  "recommendation": "MATCHED_PENDING_HUMAN_APPROVAL",
+  "generated_at": "2026-11-16T10:05:58+05:30",
+  "discrepancies": []
+}

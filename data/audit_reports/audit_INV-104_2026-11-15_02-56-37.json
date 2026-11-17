@@ -1,0 +1,15 @@
+{
+    "invoice_number": "INV-104",
+    "status": "FLAGGED",
+    "generated_at": "2026-11-15_02-56-37",
+    "discrepancies": [
+        {
+            "type": "PRICE_HIKE",
+            "details": "Invoice total (5000.0) exceeds PO total (0.0)."
+        },
+        {
+            "type": "UNKNOWN_SKU",
+            "details": "Item SKU 'LAPTOP-01' on invoice was not found on PO #101."
+        }
+    ]
+}

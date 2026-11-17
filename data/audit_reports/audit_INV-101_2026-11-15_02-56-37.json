@@ -1,0 +1,11 @@
+{
+    "invoice_number": "INV-101",
+    "status": "FLAGGED",
+    "generated_at": "2026-11-15_02-56-37",
+    "discrepancies": [
+        {
+            "type": "PRICE_HIKE",
+            "details": "Invoice total (5000.0) exceeds PO total (0.0)."
+        }
+    ]
+}

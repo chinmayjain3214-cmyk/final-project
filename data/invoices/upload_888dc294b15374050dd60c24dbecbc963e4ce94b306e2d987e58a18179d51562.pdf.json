@@ -1,0 +1,76 @@
+{
+  "_cache_version": 2,
+  "_source_size": 3037,
+  "_source_mtime_ns": 1794743317472316700,
+  "data": {
+    "document_type": "invoice",
+    "invoice_number": "ACS-8842",
+    "credit_note_number": null,
+    "invoice_date": "2026-11-04",
+    "date": "2026-11-04",
+    "vendor": "Apex Cloud Solutions",
+    "vendor_name": "Apex Cloud Solutions",
+    "gstin": null,
+    "po_reference": "PO-2026-99A",
+    "po_number": "PO-2026-99A",
+    "currency": "$",
+    "items": [
+      {
+        "name": "Cloud Server Infrastructure Hosting (Monthly)",
+        "description": "Cloud Server Infrastructure Hosting (Monthly)",
+        "quantity": 1.0,
+        "unit": null,
+        "unit_price": 450.0,
+        "line_total": 450.0,
+        "amount": 450.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "Database Optimization & Maintenance",
+        "description": "Database Optimization & Maintenance",
+        "quantity": 8.0,
+        "unit": null,
+        "unit_price": 125.0,
+        "line_total": 1000.0,
+        "amount": 1000.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "SSL Security Certificate Renewal (2-Year)",
+        "description": "SSL Security Certificate Renewal (2-Year)",
+        "quantity": 2.0,
+        "unit": null,
+        "unit_price": 85.0,
+        "line_total": 170.0,
+        "amount": 170.0,
+        "discount_percent": null,
+        "tax_percent": null
+      },
+      {
+        "name": "24/7 Technical Support Retainer",
+        "description": "24/7 Technical Support Retainer",
+        "quantity": 1.0,
+        "unit": null,
+        "unit_price": 300.0,
+        "line_total": 300.0,
+        "amount": 300.0,
+        "discount_percent": null,
+        "tax_percent": null
+      }
+    ],
+    "subtotal": 1920.0,
+    "cgst": null,
+    "sgst": null,
+    "igst": null,
+    "tax": 0.0,
+    "shipping": null,
+    "discount": null,
+    "total": 1920.0,
+    "exchange_rate": null,
+    "service_details": {
+      "hours": null
+    }
+  }
+}

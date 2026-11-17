@@ -1,0 +1,23 @@
+{
+  "invoice_number": "DEMO-131-QTY",
+  "po_id": 131,
+  "source_invoice_file": "inv_131.json",
+  "status": "NEEDS_HUMAN_REVIEW",
+  "matching_result": "DISCREPANCIES_FOUND",
+  "recommendation": "FLAG_FOR_HUMAN_REVIEW",
+  "generated_at": "2026-11-16T15:05:01+05:30",
+  "discrepancies": [
+    {
+      "type": "INVOICE_EXCEEDS_PO_QUANTITY",
+      "details": "Invoiced quantity (6) for 'Laptop' exceeds ordered quantity (5)."
+    },
+    {
+      "type": "INVOICE_EXCEEDS_ACCEPTED_GRN_QUANTITY",
+      "details": "Invoiced quantity (6) for 'Laptop' exceeds the total accepted quantity in the GRN (5)."
+    },
+    {
+      "type": "INVOICE_TOTAL_EXCEEDS_PO",
+      "details": "Invoice total (7080.00) exceeds PO total (5900.00) plus 0% tolerance."
+    }
+  ]
+}

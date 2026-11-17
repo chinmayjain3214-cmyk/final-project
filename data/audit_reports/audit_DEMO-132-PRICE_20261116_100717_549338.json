@@ -1,0 +1,19 @@
+{
+  "invoice_number": "DEMO-132-PRICE",
+  "po_id": 132,
+  "source_invoice_file": "inv_132.json",
+  "status": "NEEDS_HUMAN_REVIEW",
+  "matching_result": "DISCREPANCIES_FOUND",
+  "recommendation": "FLAG_FOR_HUMAN_REVIEW",
+  "generated_at": "2026-11-16T10:07:17+05:30",
+  "discrepancies": [
+    {
+      "type": "UNIT_PRICE_EXCEEDED",
+      "details": "Invoice unit price (1200.0000) for 'Laptop' exceeds the PO approved unit price (1000.0000) plus 0% tolerance."
+    },
+    {
+      "type": "INVOICE_TOTAL_EXCEEDS_PO",
+      "details": "Invoice total (7080.00) exceeds PO total (5900.00) plus 0% tolerance."
+    }
+  ]
+}

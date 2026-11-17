@@ -1,0 +1,20 @@
+{
+  "grn_number": "GRN-101",
+  "po_number": "PO-101",
+  "status": "RECEIVED",
+  "received_date": "2026-11-01",
+  "items": [
+    {
+      "description": "Printer Paper",
+      "quantity_received": 50,
+      "quantity_accepted": 50
+    },
+    {
+      "description": "Stapler",
+      "quantity_received": 20,
+      "quantity_accepted": 20
+    }
+  ],
+  "po_id": 101,
+  "record_id": "grn_101"
+}

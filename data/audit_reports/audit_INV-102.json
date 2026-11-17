@@ -1,0 +1,14 @@
+{
+    "invoice_number": "INV-102",
+    "status": "FLAGGED",
+    "discrepancies": [
+        {
+            "type": "MISSING_PO",
+            "details": "Purchase Order file for PO #102 is missing."
+        },
+        {
+            "type": "MISSING_GRN",
+            "details": "Goods Receipt file for PO #102 is missing."
+        }
+    ]
+}

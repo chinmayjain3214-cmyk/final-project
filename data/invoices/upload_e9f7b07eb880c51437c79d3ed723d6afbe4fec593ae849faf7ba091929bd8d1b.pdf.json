@@ -1,0 +1,42 @@
+{
+  "_cache_version": 2,
+  "_source_size": 3292,
+  "_source_mtime_ns": 1794803816791072000,
+  "data": {
+    "document_type": "tax invoice",
+    "invoice_number": "DEMO-132-PRICE",
+    "credit_note_number": null,
+    "invoice_date": "2026-11-15",
+    "date": "2026-11-15",
+    "vendor": "Nova Computer Systems",
+    "vendor_name": "Nova Computer Systems",
+    "gstin": "08AABCN1234K1Z5",
+    "po_reference": "PO-132",
+    "po_number": "PO-132",
+    "currency": "INR",
+    "items": [
+      {
+        "name": "Laptop",
+        "description": "Laptop",
+        "quantity": 5,
+        "unit": "piece",
+        "unit_price": 1200.0,
+        "line_total": 6000.0,
+        "amount": 6000.0,
+        "discount_percent": null,
+        "tax_percent": null
+      }
+    ],
+    "subtotal": 6000.0,
+    "cgst": 540.0,
+    "sgst": 540.0,
+    "igst": null,
+    "shipping": null,
+    "discount": null,
+    "total": 7080.0,
+    "exchange_rate": null,
+    "service_details": {
+      "hours": null
+    }
+  }
+}

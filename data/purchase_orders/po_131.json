@@ -1,0 +1,28 @@
+{
+  "po_id": 131,
+  "record_id": "po_131",
+  "po_number": "PO-131",
+  "vendor_id": "VEN-113",
+  "vendor_name": "Nova Computer Systems",
+  "department_id": "DEPT-IT",
+  "status": "APPROVED",
+  "currency": "INR",
+  "price_tolerance_percent": 0.0,
+  "items": [
+    {
+      "description": "Laptop",
+      "name": "Laptop",
+      "sku": "LAPTOP-01",
+      "quantity_ordered": 5,
+      "quantity": 5,
+      "unit": "piece",
+      "approved_unit_price": 1000.0,
+      "unit_price": 1000.0,
+      "tax_percent": 18.0
+    }
+  ],
+  "subtotal": 5000.0,
+  "tax_amount": 900.0,
+  "total_amount": 5900.0,
+  "notes": "Fictional regression-test purchase order. Not an actual institutional order."
+}
